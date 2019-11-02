@@ -56,7 +56,7 @@ image: '/assets/images/default_blog_cover.jpg'
 asset_url: /assets
 #asset_url: //t1.daumcdn.net/osa/blog/assets
 google_analytics:
-  ua: 'UA-72007721-1'
+  ua: 'G-RLNMT1BBXZ'
 facebook:
   app_id: '2394418680775015'
 #App Id 추가
