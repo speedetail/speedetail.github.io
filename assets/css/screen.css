@@ -741,7 +741,7 @@ body.home-template {
 body.home-template #cover,
 body.archive-template #cover,
 body.page-template #cover {
-    height: 460px;
+    height: 300px;
 }
 
 body.home-template #cover {
