@@ -52,7 +52,7 @@ keep_files: [assets, files]
 github: [metadata]
 # iolo's custom
 author: speedetail2@gmail.com
-image: '/assets/images/default_blog_cover.jpg'
+image: '/assets/images/default_cover.jpg'
 asset_url: /assets
 #asset_url: //t1.daumcdn.net/osa/blog/assets
 google_analytics:
