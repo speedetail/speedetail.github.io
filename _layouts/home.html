@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="cover" class="container-fluid" {% if site.image %}style="background-image:url({{ site.image }});" {% endif %}>
-  {% if paginator.page == 1 %}
+  <!--{% if paginator.page == 1 %}-->
   <!--[if (gt IE 9)|!(IE)]><!-->
   <video loop muted preload="metadata" crossorigin="anonymous">
     <source src="{{ site.asset_url }}/images/blog_cover.webm" type="video/webm" />
@@ -10,7 +10,7 @@ layout: default
     <source src="{{ site.asset_url }}/images/blog_cover.mp4" type="video/mp4" />
   </video>
   <!--<![endif]-->
-  {% endif %}
+  <!--{% endif %}-->
   <div>
     <h1>{{ site.title }}</h1>
     <p>{{ site.description | newline_to_br }}</p>
