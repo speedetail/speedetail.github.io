@@ -14,7 +14,7 @@
     <ul class="search__results" id="results-container"></ul>
 
     <ul id="menu" class="nav">
-        <li class="{% if page.url != '/opensource/' and page.url != '/openapi/' and page.url != '/donate/' %} active {% endif %}"><a href="{{ base_path }}/">홈</a></li>
+        <li class="{% if page.url != '/opensource/' and page.url != '/download/' and page.url != '/donate/' %} active {% endif %}"><a href="{{ base_path }}/">홈</a></li>
         <li class="{% if page.url == '/download/' %} active {% endif %}"><a href="{{ base_path }}/download/">다운로드</a></li>
         <li class="{% if page.url == '/openapi/' %} active {% endif %}"><a href="{{ base_path }}/openapi/">자주 묻는 질문</a></li>
         <!--도움말-->
@@ -30,7 +30,7 @@
         resultsContainer: document.getElementById('results-container'),
         json: '{{ site.baseurl }}/search2.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: '<li>No results found</li>',
+        noResultsText: '<li>No results</li>',
         limit: 15,
         fuzzy: false,
         exclude: ['Welcome']
