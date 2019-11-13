@@ -10,7 +10,7 @@ tags: [FAQ]
 
 ## [SPEEDETAIL](https://www.speedetail.com)
 
-* [SPEEDETAIL이 뭔가요?](https://www.speedetail.com/faq/#)
+* [SPEEDETAIL이 뭔가요?](https://www.speedetail.com/faq/#SPEEDETAIL이_뭔가요?)
   - [사용자관리](https://developers.kakao.com/features/platform#사용자관리)
   - [푸시알림](https://developers.kakao.com/features/platform#푸시-알림)
 * [카카오 서비스 API](https://developers.kakao.com/features/kakao)
