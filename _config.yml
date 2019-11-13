@@ -54,7 +54,6 @@ github: [metadata]
 author: speedetail2@gmail.com
 image: '/assets/images/default_cover.jpg'
 asset_url: /assets
-#asset_url: //t1.daumcdn.net/osa/blog/assets
 google_analytics:
   ua: 'G-RLNMT1BBXZ'
 facebook:
