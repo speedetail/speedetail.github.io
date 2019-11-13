@@ -1474,7 +1474,7 @@ body.page-template {
     body.post-template #navbar,
     body.author-template #navbar,
     body.tag-template #navbar {
-        padding-top: 15px; /* 60px(height) = ?(padding-top) + 22(share icon height) + 15(padding-bottom) */
+        padding-top: 18px; /* 60px(height) = ?(padding-top) + 22(share icon height) + 15(padding-bottom) */
         padding-bottom: 15px;
     }
 
