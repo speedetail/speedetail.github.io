@@ -7,11 +7,11 @@ sitemap: yes
 excerpt: SPEEDETAIL FAQ
 tags: [FAQ]
 ---
-
+contents {:toc}
 ## [SPEEDETAIL](https://www.speedetail.com)
 
 * [SPEEDETAIL이 뭔가요?](https://speedetail.github.io/faq/#SPEEDETAIL이_뭔가요?)
-  - [사용자관리](https://developers.kakao.com/features/platform#사용자관리)
+  - [SPEEDETAIL](https://developers.kakao.com/features/platform#사용자관리)
   - [푸시알림](https://developers.kakao.com/features/platform#푸시-알림)
 * [카카오 서비스 API](https://developers.kakao.com/features/kakao)
   - [카카오내비](https://developers.kakao.com/features/kakao#카카오내비-API)
@@ -34,4 +34,5 @@ tags: [FAQ]
 
 * [API 문서](https://github.com/plusfriend/auto_reply)
 
-# SPEEDETAIL이 뭔가요?
+## SPEEDETAIL이 뭔가요?
+SPEEDETAIL이란 SPEED와 DETAIL이 합쳐져 만들어진 Life Management Tool입니다.
