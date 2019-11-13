@@ -1,14 +1,13 @@
 ---
 layout: post
 title: 'SPEEDETAIL 메인 사이트입니다.'
-author: iolo.fitzowen
-date: 2016-07-07 15:25
+author: sangdeok.jeong
+date: 2019-11-14 2:10
 tags: [github,github-pages,jekyll]
-image: /files/covers/blog.jpg
+image: /assets/images/default_cover.jpg
 ---
-kakao 기술 블로그는 올해 초 [Ghost] 블로깅 플랫폼을 사용해서 오픈했으나,
-최근 [GitHub Pages]와 [Jekyll]으로 바뀌었습니다.
-이 글에서는 kakao 기술 블로그를 [GitHub Pages]로 옮기면서 [Jekyll]에 위해 추가한
+SPEEDETAIL 사이트는 [GitHub Pages]와 [Jekyll] 기반으로 구성되어있습니다.
+이 글에서는 SPEEDETAIL 블로그를 [GitHub Pages]로 만들면서 [Jekyll]에 위해 추가한
 기능들 - 태그별 포스트 목록 페이지, 작성자별 포스트 목록 페이지, 사이트맵 - 을 소개합니다.
 <!--more-->
 
