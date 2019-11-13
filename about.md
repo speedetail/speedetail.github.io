@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: /files/covers/blog.jpg
+image: /assets/images/default_cover.jpg
 sitemap: yes
 tags: [about]
 ---
