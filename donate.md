@@ -15,7 +15,7 @@ tags: [donate]
 
 > 지원에 감사드립니다.
 
-* Speedetail Team
+* SPEEDETAIL Team
 
 
 ## 응원의 글
