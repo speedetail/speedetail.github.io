@@ -14,11 +14,11 @@
     <ul class="search__results" id="results-container"></ul>
 
     <ul id="menu" class="nav">
-        <li class="{% if page.url != '/opensource/' and page.url != '/download/' and page.url != '/donate/' %} active {% endif %}"><a href="{{ base_path }}/">홈</a></li>
+        <li class="{% if page.url != '/download/' and page.url != '/faq/' and page.url != '/donate/' %} active {% endif %}"><a href="{{ base_path }}/">홈</a></li>
         <li class="{% if page.url == '/download/' %} active {% endif %}"><a href="{{ base_path }}/download/">다운로드</a></li>
-        <li class="{% if page.url == '/openapi/' %} active {% endif %}"><a href="{{ base_path }}/openapi/">자주 묻는 질문</a></li>
+        <li class="{% if page.url == '/faq/' %} active {% endif %}"><a href="{{ base_path }}/faq/">자주 묻는 질문</a></li>
         <!--도움말-->
-        <li class="{% if page.url == '/donate/' %} active {% endif %}"><a href="{{ base_path }}/nonate/">후원</a></li>
+        <li class="{% if page.url == '/donate/' %} active {% endif %}"><a href="{{ base_path }}/donate/">후원</a></li>
     </ul>
 </div>
 <!-- Script pointing to jekyll-search.js -->
