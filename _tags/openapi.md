@@ -1,5 +1,5 @@
 ---
-name: openapi
-title: 오픈API
-image: /files/covers/openapi.png
+name: SpeedetailExcel
+title: SPEEDETAIL엑셀양식
+image: /assets/images/default_cover.jpg
 ---
