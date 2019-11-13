@@ -28,7 +28,7 @@
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem;
-  height: 360px;
+  height: 100%;
 }
 
 .card:hover{ /* when mouse hover over pricing table */
@@ -59,14 +59,32 @@
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: .25rem;
+/*   border-radius: .25rem; */
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
+/*
 .btn-primary {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+}
+추가
+*/
+.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.btn-position {
+
 }
 
 .text-muted {
