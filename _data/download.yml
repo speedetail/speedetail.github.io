@@ -9,14 +9,13 @@ defaults:
   - name: Speedetail Android App
     title: 스피디테일 안드로이드용 어플리케이션
     download_url: https://speedetail.github.io/files/speedetail.apk
-    <!--Google PlayStore주소-->
     content: 스피디테일의 철학에 따라 만들어진 안드로이드 어플리케이션입니다.
     tags:
      - Android
 
 tagmap:
   - tag: Speedetail
-    url: http://www.speedetail.com
+    url: https://www.speedetail.com
   - tag: Android
     url: https://www.speedetail.com
   - tag: GooglePlay
