@@ -1,5 +1,5 @@
 ---
 name: excel
-title: SPEEDETAIL엑셀양식
+title: SPEEDETAIL 엑셀
 image: /assets/images/default_cover.jpg
 ---
