@@ -1,0 +1,23 @@
+defaults:
+  - name: Speedetail Excel
+    title: 스피디테일 기본 엑셀 양식
+    download_url: https://speedetail.github.io/files/speedetail_sample.xlsx
+    content: 스피디테일 WEEKLY/MONTHLY/YEARLY 엑셀 양식입니다.
+    tags:
+     - Speedetail
+
+  - name: Speedetail Android App
+    title: 스피디테일 안드로이드용 어플리케이션
+    download_url: https://speedetail.github.io/files/speedetail.apk
+    <!--Google PlayStore주소-->
+    content: 스피디테일의 철학에 따라 만들어진 안드로이드 어플리케이션입니다.
+    tags:
+     - Android
+
+tagmap:
+  - tag: Speedetail
+    url: http://www.speedetail.com
+  - tag: Android
+    url: https://www.speedetail.com
+  - tag: GooglePlay
+    url: https://www.speedetail.com
