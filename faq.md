@@ -7,7 +7,8 @@ sitemap: yes
 excerpt: SPEEDETAIL FAQ
 tags: [FAQ]
 ---
-contents {:toc}
+* SPEEDETAIL이 뭔가요?
+{:toc}
 ## [SPEEDETAIL](https://www.speedetail.com)
 
 * [SPEEDETAIL이 뭔가요?](https://speedetail.github.io/faq/#SPEEDETAIL이_뭔가요?)
