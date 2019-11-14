@@ -1,12 +1,12 @@
 <!-- Comments -->
-{% if site.data.comments[page.slug] %}
+{% if site.data.comments[include.pagelink] %}
     <h3>
-    {% if site.data.comments[page.slug].size > 1 %}
-      {{ site.data.comments[page.slug] | size }}
+    {% if site.data.comments[include.pagelink].size > 1 %}
+      {{ site.data.comments[include.pagelink] | size }}
     {% endif %}
     Comments:
     </h3>
-  {% assign comments = site.data.comments[page.slug] | sort %}
+  {% assign comments = site.data.comments[include.pagelink] | sort %}
     {% for comment in comments %}
       <label>
         {% if comment[1].url %}
