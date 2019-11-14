@@ -66,3 +66,7 @@ google_plus:
   username: speedetail
 github_url:
   username: speedetail
+
+#Static Man 추가
+#
+staticman_url: https://api.staticman.net/v3/entry/github/[YOUR USERNAME]/[YOUR REPOSITORY]/master/comments
