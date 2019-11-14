@@ -69,4 +69,5 @@ github_url:
 
 #Static Man 추가
 #https://github.com/apps/staticman-net 추가
-staticman_url: https://api.staticman.net/v3/entry/github/[YOUR USERNAME]/[YOUR REPOSITORY]/master/comments
+#staticman_url: https://api.staticman.net/v3/entry/github/[YOUR USERNAME]/[YOUR REPOSITORY]/master/comments
+staticman_url: https://api.staticman.net/v3/entry/github/speedetail/speedetail.github.io/master/comments
