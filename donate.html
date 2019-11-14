@@ -1,0 +1,59 @@
+---
+layout: page
+title: 후원하기
+permalink: /donate/
+sitemap: yes
+excerpt: Speedetail의 지속가능한 발전을 위한 기부 페이지입니다.
+tags: [donate]
+---
+
+## SPEEDETAIL을 사용해주셔서 감사드립니다.
+
+여러분의 후원은 [SPEEDETAIL](www.speedetail.com) 지속 개발에 직접적인 도움이 될 것입니다.
+
+후원 금액은 소프트웨어 개발, 호스팅 등의 비용에 도움을 줍니다.
+
+지원에 감사드립니다.
+
+> *SPEEDETAIL TEAM*
+
+
+## 응원의 글
+<!-- Comments -->
+{% if site.data.comments[page.slug] %}
+    <h3>
+    {% if site.data.comments[page.slug].size > 1 %}
+      {{ site.data.comments[page.slug] | size }}
+    {% endif %}
+    Comments:
+    </h3>
+  {% assign comments = site.data.comments[page.slug] | sort %}
+    {% for comment in comments %}
+      <label>
+        {% if comment[1].url %}
+          <a href="{{ comment[1].url }}">
+        {% endif %}
+        <strong>{{ comment[1].name }}</strong>
+        {% if comment[1].url %}
+          </a>
+        {% endif %}
+      </label>
+      <em>{{ comment[1].date | date: "%B %d, %Y" }}</em>
+      <p>{{ comment[1].message | markdownify }}</p>
+    {% endfor %}
+{% endif %}
+<!-- Comments Form -->
+  <form method="POST" action="{{ site.staticman_url }}">
+    <input name="options[redirect]" type="hidden" value="https://example.com">
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+      <label>Name</label>
+      <input name="fields[name]" type="text">
+      <label>E-mail (optional)</label>
+      <input name="fields[email]" type="email">
+      <label>Website (optional)</label>
+      <input name="fields[url]" type="url">
+      <label>Message</label>
+      <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
+      <small>Comments will appear after moderation.</small>
+      <button type="submit">Submit comment</button>
+  </form>
