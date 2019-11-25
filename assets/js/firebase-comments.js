@@ -4,8 +4,8 @@
 //     //var link = $("link[rel='canonical']").attr("href");
 //     //var pathkey = decodeURI(link.replace(new RegExp('\\/|\\.', 'g'),"_"));
 //     //var postRef = postComments.child(pathkey);
-    var rootRef = firebase.database().ref();
-//     var rootRef = new Firebase("https://speedetail-web.firebaseio.com/")
+//       var rootRef = firebase.database().ref();
+    var rootRef = new Firebase("https://speedetail-web.firebaseio.com/")
     var postRef = rootRef.child(slugify(window.location.pathname));
     $("#comment").submit(function() {
         postRef.push().set({
@@ -21,10 +21,10 @@
     postRef.on("child_added", function(snapshot) {
 //         var newComment = snapshot.val();
         var newPost = snapshot.val();
-        var converter = new showdown.Converter({ extensions: ['xssfilter'] });
-        converter.setFlavor('github');
+//         var converter = new showdown.Converter({ extensions: ['xssfilter'] });
+//         converter.setFlavor('github');
 //         var markedMessage = converter.makeHtml(newComment.message);
-        var markedMessage = converter.makeHtml(newPost.message);
+//         var markedMessage = converter.makeHtml(newPost.message);
 //         var html = "<div class='comment'>";
 //         html += "<h4>" + newComment.name + "</h4>";
 //         html += "<div class='profile-image'><img src='https://www.gravatar.com/avatar/" + newComment.md5Email + "?s=100&d=retro'/></div>";
@@ -34,7 +34,7 @@
         $(".comments").prepend('<div class="comment">' +
         '<h4>' + escapeHtml(newPost.name) + '</h4>' +
         '<div class="profile-image"><img src="http://www.gravatar.com/avatar/' + escapeHtml(newPost.md5Email) + '?s=100&d=retro"/></div> ' +
-        '<span class="date">' + moment(newPost.postedAt).fromNow() + '</span><p>' + markedMessage  + '</p></div>');
+        '<span class="date">' + moment(newPost.postedAt).fromNow() + '</span><p>' + escapeHtml(newPost.message)  + '</p></div>');
 
     });
 
