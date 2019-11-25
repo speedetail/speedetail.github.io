@@ -19,10 +19,12 @@
     });    
   
     postRef.on("child_added", function(snapshot) {
-        var newComment = snapshot.val();
+//         var newComment = snapshot.val();
+        var newPost = snapshot.val();
         var converter = new showdown.Converter({ extensions: ['xssfilter'] });
         converter.setFlavor('github');
-        var markedMessage = converter.makeHtml(newComment.message);
+//         var markedMessage = converter.makeHtml(newComment.message);
+        var markedMessage = converter.makeHtml(newPost.message);
 //         var html = "<div class='comment'>";
 //         html += "<h4>" + newComment.name + "</h4>";
 //         html += "<div class='profile-image'><img src='https://www.gravatar.com/avatar/" + newComment.md5Email + "?s=100&d=retro'/></div>";
