@@ -23,12 +23,17 @@
         var converter = new showdown.Converter({ extensions: ['xssfilter'] });
         converter.setFlavor('github');
         var markedMessage = converter.makeHtml(newComment.message);
-        var html = "<div class='comment'>";
-        html += "<h4>" + newComment.name + "</h4>";
-        html += "<div class='profile-image'><img src='https://www.gravatar.com/avatar/" + newComment.md5Email + "?s=100&d=retro'/></div>";
-        html += "<span class='date'>" + jQuery.timeago(newComment.postedAt) + "</span>"
-        html += "<p>" + markedMessage  + "</p></div>";
-        $(".comments").prepend(html);
+//         var html = "<div class='comment'>";
+//         html += "<h4>" + newComment.name + "</h4>";
+//         html += "<div class='profile-image'><img src='https://www.gravatar.com/avatar/" + newComment.md5Email + "?s=100&d=retro'/></div>";
+//         html += "<span class='date'>" + jQuery.timeago(newComment.postedAt) + "</span>"
+//         html += "<p>" + markedMessage  + "</p></div>";
+//         $(".comments").prepend(html);
+        $(".comments").prepend('<div class="comment">' +
+        '<h4>' + escapeHtml(newPost.name) + '</h4>' +
+        '<div class="profile-image"><img src="http://www.gravatar.com/avatar/' + escapeHtml(newPost.md5Email) + '?s=100&d=retro"/></div> ' +
+        '<span class="date">' + moment(newPost.postedAt).fromNow() + '</span><p>' + markedMessage  + '</p></div>');
+
     });
 
 //     postRef.on("child_added", function(snapshot) {
