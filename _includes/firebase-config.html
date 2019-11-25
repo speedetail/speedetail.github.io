@@ -2,14 +2,6 @@
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
-<!-- 댓글 추가 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.7.0/js/md5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.4/jquery.timeago.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js"></script>
-<script src="/assets/js/showdown-xss-filter.js"></script>
-<!-- <script src="/assets/js/firebase-comments.js"></script> -->
 
 <script>
   // Firebase Console에서 Web-Api Key와 Authentication 탭에서 Authorized domains에 speedetail.github.io 추가 필수
@@ -21,37 +13,6 @@
     storageBucket: "speedetail-web.appspot.com",
   };
   firebase.initializeApp(config);
-  
-  // FireBase Comment 기능
-    var rootRef = firebase.database().ref();
-    var postComments = rootRef.child('postComments');
-    var link = $("link[rel='canonical']").attr("href");
-    var pathkey = decodeURI(link.replace(new RegExp('\\/|\\.', 'g'),"_"));
-    var postRef = postComments.child(pathkey);
-    $("#comment").submit(function() {
-        postRef.push().set({
-            name: $("#name").val(),
-            message: $("#message").val(),
-            md5Email: md5($("#email").val()),
-            postedAt: firebase.database.ServerValue.TIMESTAMP
-        });
-        $("input[type=text], textarea").val("");
-        return false;
-    });    
-  
-    postRef.on("child_added", function(snapshot) {
-        var newComment = snapshot.val();
-        var converter = new showdown.Converter({ extensions: ['xssfilter'] });
-        converter.setFlavor('github');
-        var markedMessage = converter.makeHtml(newComment.message);
-        var html = "<div class='comment'>";
-        html += "<h4>" + newComment.name + "</h4>";
-        html += "<div class='profile-image'><img src='https://www.gravatar.com/avatar/" + newComment.md5Email + "?s=100&d=retro'/></div>";
-        html += "<span class='date'>" + jQuery.timeago(newComment.postedAt) + "</span>"
-        html += "<p>" + markedMessage  + "</p></div>";
-        $("#comments-container").prepend(html);
-    });
-  // FireBase Comment 기능 끝
 </script>
 
 <script src="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.js"></script>
@@ -78,3 +39,12 @@
 </script>
 
 <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.css" />
+
+<!-- 댓글 추가 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.7.0/js/md5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.4/jquery.timeago.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js"></script>
+<script src="/assets/js/showdown-xss-filter.js"></script>
+<script src="/assets/js/firebase-comments.js"></script>
