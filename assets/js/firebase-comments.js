@@ -1,10 +1,11 @@
     // FireBase Setting은 위에서 끝냈다고 가정
-    var rootRef = firebase.database().ref();
+    //var rootRef = firebase.database().ref();
     //var postComments = rootRef.child('postComments');
     //var link = $("link[rel='canonical']").attr("href");
     //var pathkey = decodeURI(link.replace(new RegExp('\\/|\\.', 'g'),"_"));
     //var postRef = postComments.child(pathkey);
-    var postRef = ref.child(slugify(window.location.pathname));
+    var rootRef = firebase.database().ref();
+    var postRef = rootRef.child(slugify(window.location.pathname));
     $("#comment").submit(function() {
         postRef.push().set({
             name: $("#name").val(),
