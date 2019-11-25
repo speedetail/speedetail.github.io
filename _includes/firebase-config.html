@@ -6,10 +6,10 @@
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyCNgmNnmZENdhcC9QHqRV7q2Aifc8FZwog",
-    authDomain: "jekyll-user-login.firebaseapp.com",
-    databaseURL: "https://jekyll-user-login.firebaseio.com",
-    storageBucket: "jekyll-user-login.appspot.com",
+    apiKey: "AIzaSyBJLdt1N7TblyY8q0hAxSsPBqOba300fkA",
+    authDomain: "speedetail-web.firebaseapp.com",
+    databaseURL: "https://speedetail-web.firebaseio.com",
+    storageBucket: "speedetail-web.appspot.com",
   };
   firebase.initializeApp(config);
 </script>
@@ -19,7 +19,7 @@
 <script type="text/javascript">
   // FirebaseUI config.
   var uiConfig = {
-    'signInSuccessUrl': '<url-to-redirect-to-on-success>',
+    'signInSuccessUrl': 'https://speedetail.github.io/' //'<url-to-redirect-to-on-success>',
     'signInOptions': [
       // Leave the lines as is for the providers you want to offer your users.
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -29,7 +29,7 @@
       firebase.auth.EmailAuthProvider.PROVIDER_ID
     ],
     // Terms of service url.
-    'tosUrl': '<your-tos-url>',
+    'tosUrl': 'https://speedetail.github.io/privacy-policy'//'<your-tos-url>',
   };
   // Initialize the FirebaseUI Widget using Firebase.
   var ui = new firebaseui.auth.AuthUI(firebase.auth());
