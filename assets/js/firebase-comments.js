@@ -1,10 +1,10 @@
     // FireBase Setting은 위에서 끝냈다고 가정
     var rootRef = firebase.database().ref();
-    var postComments = rootRef.child('postComments');
-    //var postComments = rootRef.child(slugify(window.location.pathname));
-    var link = $("link[rel='canonical']").attr("href");
-    var pathkey = decodeURI(link.replace(new RegExp('\\/|\\.', 'g'),"_"));
-    var postRef = postComments.child(pathkey);
+    //var postComments = rootRef.child('postComments');
+    //var link = $("link[rel='canonical']").attr("href");
+    //var pathkey = decodeURI(link.replace(new RegExp('\\/|\\.', 'g'),"_"));
+    //var postRef = postComments.child(pathkey);
+    var postRef = ref.child(slugify(window.location.pathname));
     $("#comment").submit(function() {
         postRef.push().set({
             name: $("#name").val(),
@@ -28,3 +28,17 @@
         html += "<p>" + markedMessage  + "</p></div>";
         $("#comments-container").prepend(html);
     });
+
+function slugify(text) {
+  return text.toString().toLowerCase().trim()
+    .replace(/&/g, '-and-')
+    .replace(/[\s\W-]+/g, '-')
+    .replace(/[^a-zA-Z0-9-_]+/g,'');
+}
+
+
+function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+}
