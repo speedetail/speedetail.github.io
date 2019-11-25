@@ -59,8 +59,8 @@
 //     div.appendChild(document.createTextNode(str));
 //      return div.innerHTML;
 //  }
-// $(function(){
 //   var ref=new Firebase("https://speedetail-web.firebaseio.com/"),
+$(function(){
   var ref=firebase.database().ref(),
       postRef=ref.child(slugify(window.location.pathname));
   
