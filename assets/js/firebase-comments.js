@@ -4,8 +4,8 @@
     //var link = $("link[rel='canonical']").attr("href");
     //var pathkey = decodeURI(link.replace(new RegExp('\\/|\\.', 'g'),"_"));
     //var postRef = postComments.child(pathkey);
-    //var rootRef = firebase.database().ref();
-    var rootRef = new Firebase("https://speedetail-web.firebaseio.com/")
+    var rootRef = firebase.database().ref();
+    //var rootRef = new Firebase("https://speedetail-web.firebaseio.com/")
     var postRef = rootRef.child(slugify(window.location.pathname));
     console.log(window.location.pathname);
     console.log(slugify(window.location.pathname));
