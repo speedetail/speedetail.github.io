@@ -1155,6 +1155,10 @@ body.page-template {
     #search-toggle {
         display: none;
     }
+    
+    #login-toggle {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -1167,6 +1171,7 @@ body.page-template {
         height: 50px;
     }
 
+    #login-toggle,
     #menu-toggle,
     #search-toggle {
         position: absolute;
@@ -1188,6 +1193,12 @@ body.page-template {
     #search-toggle {
         right: 0;
         background: url(../images/mo/icon_search.png) no-repeat center;
+        background-size: 22px 22px;
+    }
+    
+    #login-toggle {
+        right: 0;
+        background: url(../images/mo/icon_login.png) no-repeat center;
         background-size: 22px 22px;
     }
 
@@ -1594,6 +1605,10 @@ body.page-template {
     #search-toggle {
         background-image: url(../images/mo/icon_search@2x.png);
     }
+    
+    #login-toggle {
+        background-image: url(../images/mo/icon_login@2x.png);
+    }
 
     #search > input {
         background-image: url(../images/mo/icon_search@2x.png);
@@ -1683,6 +1698,9 @@ body.page-template {
 
     #search-toggle {
         background-image: url(../images/mo/icon_search@3x.png);
+    }
+    #login-toggle {
+        background-image: url(../images/mo/icon_login@3x.png);
     }
 
     #search > input {
