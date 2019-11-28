@@ -20,6 +20,7 @@
             if ($('#menu').is(':visible')) {
                 $('#menu').hide();
             } else {
+                $('#login').hide();
                 $('#search').hide();
                 $('#menu').show();
             }
@@ -31,8 +32,21 @@
             if ($('#search').is(':visible')) {
                 $('#search').hide();
             } else {
+                $('#login').hide();
                 $('#menu').hide();
                 $('#search').show();
+            }
+        });
+        
+        $('#login-toggle').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if ($('#login').is(':visible')) {
+                $('#login').hide();
+            } else {
+                $('#search').hide();
+                $('#menu').hide();
+                $('#login').show();
             }
         });
 
