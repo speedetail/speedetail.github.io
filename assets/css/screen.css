@@ -1189,9 +1189,9 @@ body.page-template {
         background: url(../images/mo/icon_menu.png) no-repeat center;
         background-size: 22px 22px;
     }
-
+    /* right : 0 -> 50px */
     #search-toggle {
-        right: 0;
+        right: 50px; 
         background: url(../images/mo/icon_search.png) no-repeat center;
         background-size: 22px 22px;
     }
