@@ -243,7 +243,8 @@ for small screen(<720px):
     position: absolute;
     z-index: 99;
     top: 0;
-    right: 30px;
+    right: 80px;
+/* 30px -> 80px */
     height: 60px;
     margin: 0;
     padding: 0;
@@ -252,7 +253,8 @@ for small screen(<720px):
 
 #search > input {
     margin: 0;
-    width: 115px; /* 115px = 160(width) - 15(padding-left) - 30(padding-right) */
+    width: 65px; /* 115px = 160(width) - 15(padding-left) - 30(padding-right) */
+/*115px->65px*/
     height: 33px;
     border-radius: 17px;
     border: 1px solid #e6e6e6;
@@ -261,7 +263,8 @@ for small screen(<720px):
     color: #505050;
     background: url(../images/pc/icon_search.png) no-repeat right;
     background-size: 13px 13px;
-    background-position-x: 135px; /* 135px = 160 - 15(right-padding) + 10(icon-width) */
+    background-position-x: 85px; /* 135px = 160 - 15(right-padding) + 10(icon-width) */
+/*135px->85px*/
 }
 
 #search > input:focus {
@@ -1157,8 +1160,23 @@ body.page-template {
         display: none;
     }
     
-    #login-toggle {
+/*  #login-toggle {
         display: none;
+    } */
+    #login-toggle {
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+    }
+    #login-toggle {
+        right: 0;
+        background: url(../images/mo/icon_login.png) no-repeat center;
+        background-size: 22px 22px;
     }
 }
 
