@@ -2,7 +2,7 @@
     font-family: 'LessSansMinimal';
     font-style: normal;
     font-weight: 400;
-    src: local('Less Sans Minimal'), local('Less Sans Minimal'),
+    src: local('Less Sans Minimal Regular'), local('Less Sans Minimal Regular'),
     url(Less.otf) format('opentype');
 }
 
@@ -10,7 +10,7 @@
     font-family: 'LessSansMinimal';
     font-style: normal;
     font-weight: 200;
-    src: local('Less Sans Minimal'), local('Less Sans Minimal'),
+    src: local('Less Sans Minimal Thin'), local('Less Sans Minimal Thin'),
     url(Less-Light.otf) format('opentype');
 }
 
@@ -18,6 +18,6 @@
     font-family: 'LessSansMinimal';
     font-style: normal;
     font-weight: 700;
-    src: local('Less Sans Minimal'), local('Less Sans Minimal'),
+    src: local('Less Sans Minimal Bold'), local('Less Sans Minimal Bold'),
     url(Less-Bold.otf) format('opentype');
 }
