@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'LessSansMinimal';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Less Sans Minimal'), local('Less Sans Minimal'),
+    url(Less.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'LessSansMinimal';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Less Sans Minimal'), local('Less Sans Minimal'),
+    url(Less-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'LessSansMinimal';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Less Sans Minimal'), local('Less Sans Minimal'),
+    url(Less-Bold.otf) format('opentype');
+}
