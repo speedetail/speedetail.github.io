@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 사용자 매뉴얼
+description: |
+  Study Speedetail
 image: /assets/images/default_cover.jpg
 permalink: /manual/
 sitemap: yes
