@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 자주 묻는 질문
+title: 사용자 매뉴얼
 image: /assets/images/default_cover.jpg
 permalink: /manual/
 sitemap: yes
