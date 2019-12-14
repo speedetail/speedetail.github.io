@@ -183,7 +183,8 @@ for small screen(<720px):
 */
 
 /* header */
-
+/* 추가 : navigationbar */
+#navigationbar,
 #header {
     margin: 0;
     padding: 0;
@@ -547,6 +548,8 @@ for small screen(<720px):
     background-size: 20px 20px;
 }
 
+/* navigationbar 추가 */
+#navigationbar,
 #header,
 #cover,
 #navbar,
@@ -1160,9 +1163,11 @@ body.page-template {
         display: none;
     }
     
-/*  #login-toggle {
+    /*  
+    #login-toggle {
         display: none;
-    } */
+    } 
+    */
     #login-toggle {
         position: absolute;
         top: 0;
@@ -1186,6 +1191,8 @@ body.page-template {
     }
 
     /* header */
+    /* navigationbar 추가 */ 
+    #navigationbar,
     #header {
         height: 50px;
     }
