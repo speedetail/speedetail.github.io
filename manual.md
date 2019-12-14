@@ -9,6 +9,7 @@ sitemap: yes
 excerpt: Study SPEEDETAIL 
 tags: [FAQ]
 ---
+# 스피디테일 시간관리법
 * 목차
 {:toc}
 # [SPEEDETAIL](https://www.speedetail.com)
