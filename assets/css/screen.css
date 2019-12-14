@@ -1357,8 +1357,8 @@ body.page-template {
     }
 
     #cover h1 + p {
-        padding-top: 3px !important;
-/*         10>3 */
+        padding-top: 5px !important;
+/*         10>5 */
     }
 
     /* navbar */
