@@ -434,17 +434,21 @@ for small screen(<720px):
 }
 
 #cover h1 {
-    font-size: 36px;
-    line-height: 52px; /* 52px = 36(font-size) + 16(line-spacing) */
+    font-size: 24px;
+    line-height: 36px; /* 52px = 36(font-size) + 16(line-spacing) */
+    /*24px + 12px 수정*/
 }
 
 #cover p {
-    font-size: 14px;
-    line-height: 22px; /* 22px = 14(font-size) + 8(line-spacing) @@iolo */
+    font-size: 12px; 
+/*14px > 12px      */  
+    line-height: 18px; /* 22px = 14(font-size) + 8(line-spacing) @@iolo */
+/*22px > 18px      */
 }
 
 #cover h1 + p {
-    padding-top: 14px; /* 14px = 30 - 16(above line-spacing) */
+    padding-top: 7px; /* 14px = 30 - 16(above line-spacing) */
+/* 14px > 7px     */
 }
 
 #cover a,
