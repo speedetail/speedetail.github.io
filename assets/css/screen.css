@@ -451,7 +451,7 @@ for small screen(<720px):
 
 #cover h1 {
     font-size: 24px;
-/*  line-height: 36px; /* 52px = 36(font-size) + 16(line-spacing) */ */
+/*  line-height: 36px; //52px = 36(font-size) + 16(line-spacing) */
     height: 34px;
     /*24px + 12px 수정*/
 }
@@ -1379,7 +1379,9 @@ body.page-template {
 
     #cover h1 {
         font-size: 24px !important;
-        line-height: 29px !important; /* 29px = 24(font-size) + 5(line-spacing) */
+/*         line-height: 29px !important;  */
+        height: 27px !important;
+        /* 29px = 24(font-size) + 5(line-spacing) */
     }
 
     #cover p {
