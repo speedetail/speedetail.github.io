@@ -1380,7 +1380,7 @@ body.page-template {
     #cover h1 {
         font-size: 24px !important;
 /*         line-height: 29px !important;  */
-        height: 29px !important;
+        height: 33px !important;
         /* 29px = 24(font-size) + 5(line-spacing) */
     }
 
