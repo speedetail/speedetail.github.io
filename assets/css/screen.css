@@ -207,8 +207,12 @@ for small screen(<720px):
 #logo {
     position: absolute;
     width: 123px;
-    height: 60px;
+    height: 34px;
+/*    60->34px  */
+    left: 50px;
+    right: 50px;
     margin: 0 auto;
+/*   auto> 123/2 = 61.5*/
     padding: 0;
     background: url(../images/pc/main_logo.png) no-repeat center;
     background-size: 123px 21px;
@@ -447,7 +451,8 @@ for small screen(<720px):
 
 #cover h1 {
     font-size: 24px;
-    line-height: 36px; /* 52px = 36(font-size) + 16(line-spacing) */
+/*  line-height: 36px; /* 52px = 36(font-size) + 16(line-spacing) */ */
+    height: 34px;
     /*24px + 12px 수정*/
 }
 
@@ -1261,7 +1266,8 @@ body.page-template {
         display: inline-block;
         left: 50px;
         right: 50px;
-        height: 50px;
+        height: 34px;
+/* 50px > 34px         */
         margin: 0 auto;
         -webkit-filter: grayscale(1) invert(1);
         filter: grayscale(1) invert(1);
