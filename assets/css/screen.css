@@ -191,7 +191,7 @@ for small screen(<720px):
     border-bottom: 1px solid #e6e6e6;
     background-color: #fff;
 }
-
+/*
 #logo {
     position: absolute;
     top: 0;
@@ -199,6 +199,16 @@ for small screen(<720px):
     width: 123px;
     height: 60px;
     margin: 0 0;
+    padding: 0;
+    background: url(../images/pc/main_logo.png) no-repeat center;
+    background-size: 123px 21px;
+}
+*/
+#logo {
+    position: absolute;
+    width: 123px;
+    height: 60px;
+    margin: 0 auto;
     padding: 0;
     background: url(../images/pc/main_logo.png) no-repeat center;
     background-size: 123px 21px;
@@ -1231,7 +1241,7 @@ body.page-template {
         background: url(../images/mo/icon_login.png) no-repeat center;
         background-size: 22px 22px;
     }
-
+    /*
     #logo {
         position: absolute;
         display: inline-block;
@@ -1243,7 +1253,17 @@ body.page-template {
         background-image: url(../images/mo/main_logo.png);
         background-size: 99px 17px;
     }
-
+    */
+    #logo {
+        position: absolute;
+        display: inline-block;
+        left: 50px;
+        right: 50px;
+        height: 50px;
+        margin: 0 auto;
+        background-image: url(../images/mo/main_logo.png);
+        background-size: 99px 17px;
+    }
     #menu {
         display: none; /* @@iolo: show/hide by js */
         position: absolute;
