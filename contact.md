@@ -14,6 +14,35 @@ tags: [contact]
 speedetail@naver.com
 </p>
 <h3>메시지 보내기</h3>
+
+<form name="sentMessage" id="contactForm" novalidate action="https://formspree.io/speedetail2@gmail.com" method="post">
+    <input type="hidden" name="_subject" value="블로그에서 새로운 연락이 왔습니다." />
+    <input type="text" name="_gotcha" style="display:none" />
+    <div class="control-group">
+        <div class="form-group floating-label-form-group controls">
+        <label></label>
+        <input type="text" class="form-control" placeholder="" id="name" name="name" required data-validation-required-message="">
+        <div class="help-block text-danger"></div>
+        </div>
+        <div class="form-group floating-label-form-group controls">
+        <label></label>
+        <input type="email" class="form-control" placeholder="" id="email" name="email" required data-validation-validemail-message="" data-validation-required-message="">
+        <div class="help-block text-danger"></div>
+        </div>
+        <div class="form-group floating-label-form-group controls">
+        <label></label>
+        <textarea rows="5" class="form-control" placeholder="" id="message" name="message" required data-validation-required-message=""></textarea>
+        <div class="help-block text-danger"></div>
+        </div>
+    </div>
+    <br>
+    <div id="success"></div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+    </div>
+</form>
+
+<!--
 <form action="" method="post">
   <p>개발자에게 한마디:
     <br>
@@ -56,6 +85,7 @@ speedetail@naver.com
     <input class="slbutton" type="submit" value="보내기" style="width:80px;">
   </p>
 </form>
+-->
 
 <h3>고맙습니다.</h3>
 <p>- SPEEDETAIL TEAM 올림</p>
