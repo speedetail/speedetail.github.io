@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 연락하기
-permalink: /contact_success/
+permalink: /contact/success/
 sitemap: yes
 excerpt: Speedetail 연락 성공
 tags: [contact]
