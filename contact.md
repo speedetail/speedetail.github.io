@@ -18,7 +18,6 @@ speedetail@naver.com
 <form name="sentMessage" id="contactForm" novalidate action="https://simple-form.com/speedetail2@gmail.com" method="post">
     <input type="hidden" name="_subject" value="www.speedetail.com에서 새로운 연락이 왔습니다." />
     <input type="text" name="_gotcha" style="display:none" />
-    <input type='hidden' name='redirect_to' value='https://www.speedetail.com/contact_success' />
     <div class="control-group">
         <div class="form-group floating-label-form-group controls">
         <label>이름 : </label>
@@ -41,7 +40,7 @@ speedetail@naver.com
         </div>
     </div>
     <br>
-    <div id="success"></div>
+    <div id="success">https://www.speedetail.com/contact_success</div>
     <div class="form-group">
         <button type="submit" class="btn btn-primary" id="sendMessageButton">보내기</button>
     </div>
