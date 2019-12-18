@@ -17,7 +17,7 @@ speedetail@naver.com
 
 <form name="sentMessage" id="contactForm" novalidate action="https://simple-form.com/speedetail2@gmail.com" method="post">
     <input type="hidden" name="_subject" value="www.speedetail.com에서 새로운 연락이 왔습니다." />
-    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="redirectURL" value="http://www.speedetail.com/contact/success" />
     <div class="control-group">
         <div class="form-group floating-label-form-group controls">
         <label>이름 : </label>
@@ -29,15 +29,18 @@ speedetail@naver.com
         <input type="email" class="form-control" placeholder="" id="email" name="email" required data-validation-validemail-message="" data-validation-required-message="">
         <div class="help-block text-danger"></div>
         </div>
+
         <select name="sex">
 	<option value="M">남자</option>
 	<option value="F">여자</option>
         </select>
+
         <div class="form-group floating-label-form-group controls">
         <label>메시지 : </label>
         <textarea rows="5" class="form-control" placeholder="" id="message" name="message" required data-validation-required-message=""></textarea>
         <div class="help-block text-danger"></div>
         </div>
+
     </div>
     <br>
     <div id="success">https://www.speedetail.com/contact_success</div>
