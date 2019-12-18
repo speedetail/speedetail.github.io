@@ -21,26 +21,26 @@ speedetail@naver.com
     <div class="control-group">
         <div class="form-group floating-label-form-group controls">
         <label>이름 : </label>
-        <input type="text" class="form-control" placeholder="" id="name" name="name" required data-validation-required-message="">
+        <input type="text" class="form-control" placeholder="" id="name" name="Name" required data-validation-required-message="">
         <div class="help-block text-danger"></div>
         </div>
         <div class="form-group floating-label-form-group controls">
         <label>이메일 : </label>
-        <input type="email" class="form-control" placeholder="" id="email" name="email" required data-validation-validemail-message="" data-validation-required-message="">
+        <input type="email" class="form-control" placeholder="" id="Email" name="email" required data-validation-validemail-message="" data-validation-required-message="">
         <div class="help-block text-danger"></div>
         </div>
 
-        <select name="sex">
+        <select name="Sex">
 	<option value="M">남자</option>
 	<option value="F">여자</option>
         </select>
         
         <div class="form-group floating-label-form-group controls">
         <label>메시지 : </label>
-        <textarea rows="5" class="form-control" placeholder="" id="message" name="message" required data-validation-required-message=""></textarea>
+        <textarea rows="5" class="form-control" placeholder="" id="message" name="Message" required data-validation-required-message=""></textarea>
         <div class="help-block text-danger"></div>
         </div>
-        <a href="https://www.speedetail.com/privacy-policy">SpeeDetail 개인정보처리방침</a>에 동의 및 업데이트 소식을 제공받는 것에 동의합니다.<input type="checkbox" name="agreement"/>
+        <a href="https://www.speedetail.com/privacy-policy">SpeeDetail 개인정보처리방침</a> 동의 및 업데이트 소식을 제공받는 것에 동의합니다.<input type="checkbox" name="Agreement"/>
 
     </div>
     <br>
