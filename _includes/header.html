@@ -23,11 +23,11 @@
     
     <div>
         <ul id="menu" class="nav">
-                <li class="{% if page.url != '/download/' and page.url != '/manual/' and page.url != '/donate/' and page.url != '/contact/' %} active {% endif %}"><a href="{{ base_path }}/">홈</a></li>
+                <li class="{% if page.url != '/download/' and page.url != '/manual/' and page.url != '/donate/' and page.url != '/contact/' and page.url != '/contact/success' %} active {% endif %}"><a href="{{ base_path }}/">홈</a></li>
                 <li class="{% if page.url == '/download/' %} active {% endif %}"><a href="{{ base_path }}/download/">다운로드</a></li>
                 <li class="{% if page.url == '/manual/' %} active {% endif %}"><a href="{{ base_path }}/manual/">사용자 매뉴얼</a></li>
                 <li class="{% if page.url == '/donate/' %} active {% endif %}"><a href="{{ base_path }}/donate/">후원</a></li>
-                <li class="{% if page.url == '/contact/' %} active {% endif %}"><a href="{{ base_path }}/contact/">연락</a></li>
+                <li class="{% if page.url == '/contact/' or page.url == '/contact/success' %} active {% endif %}"><a href="{{ base_path }}/contact/">연락</a></li>
         </ul>
     </div>
     
