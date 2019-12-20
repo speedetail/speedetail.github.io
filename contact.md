@@ -44,7 +44,6 @@ speedetail@naver.com
 
     </div>
     <br>
-    <div id="success">https://www.speedetail.com/contact_success</div>
     <div class="form-group">
         <button type="submit" class="btn btn-primary" id="sendMessageButton">보내기</button>
     </div>
