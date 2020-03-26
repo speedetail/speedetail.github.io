@@ -1,10 +1,10 @@
 {%- if page.comments != false -%}
-
+<!-- 카운트 표시용(생략가능) -->
+<script id="dsq-count-scr" src="//speedetail.disqus.com/count.js" async></script>
+<a href="https://speedetail.github.io{{ page.url | relative_url }}#disqus_thread">Comments</a>
+<!-- 메인 댓글용 -->
 <div id="disqus_thread"></div>
 <script>
-//카운트 표시(생략가능)
-
-//메인 댓글창 표시
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = 'https://speedetail.disqus.com/embed.js';
