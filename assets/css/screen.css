@@ -1184,26 +1184,6 @@ body.page-template {
         display: none;
     }
     
-    /*  
-    #login-toggle {
-        display: none;
-    } 
-    */
-    #login-toggle {
-        position: absolute;
-        top: 0;
-        width: 50px;
-        height: 60px;
-        margin: 0;
-        padding: 0;
-        border: none;
-        outline: none;
-    }
-    #login-toggle {
-        right: 15px;
-        background: url(../images/mo/icon_login.png) no-repeat center;
-        background-size: 22px 22px;
-    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -1218,7 +1198,6 @@ body.page-template {
         height: 50px;
     }
 
-    #login-toggle,
     #menu-toggle,
     #search-toggle {
         position: absolute;
@@ -1236,18 +1215,13 @@ body.page-template {
         background: url(../images/mo/icon_menu.png) no-repeat center;
         background-size: 22px 22px;
     }
-    /* right : 0 -> 50px */
+    
     #search-toggle {
-        right: 50px; 
+        right: 0px; 
         background: url(../images/mo/icon_search.png) no-repeat center;
         background-size: 22px 22px;
     }
     
-    #login-toggle {
-        right: 0;
-        background: url(../images/mo/icon_login.png) no-repeat center;
-        background-size: 22px 22px;
-    }
     /*
     #logo {
         position: absolute;
