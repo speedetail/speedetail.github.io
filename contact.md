@@ -11,7 +11,7 @@ tags: [contact]
 <h3>이메일</h3>
 <p>
 스피디테일<br/>
-speedetail@naver.com
+speedetail2@gmail.com
 </p>
 <h3>메시지 보내기</h3>
 
