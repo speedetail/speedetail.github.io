@@ -12,12 +12,12 @@ tags: [SPEEDETAIL Download]
 <hr/>
 <div class="row">
 	{% for item in site.data.download.defaults %}
-	<div class="col-sm-6">
+	<div class="col-sm-4">
 		<div class="card">
 			<div class="card-body">
 				<h2 class="card-title" style="margin:10px 0 0 0;">{{ item.name }}</h2>
 				<h6 class="card-subtitle mb-2 text-muted" style="margin-top:10px">{{ item.title }}</h6>
-				<p class="card-text">{{ item.content }}</p>
+<!-- 				<p class="card-text">{{ item.content }}</p> -->
 				<p class="post-tags">
 					{% for tag in item.tags %}
 					{% assign tag_url = '/tags/' | append: tag %}
